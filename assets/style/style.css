@@ -21,7 +21,7 @@ body {
     background-image: url('../images/hip-square.webp');
     background-position:bottom left;
     background-attachment: fixed;
-    font-family: 'Mali', cursive;
+    font-family: 'Quattrocento Sans', sans-serif;
 }
 
 header {
@@ -33,14 +33,14 @@ header {
     color: bisque;
     position: FIXED;
     z-index: 500;
-    margin-top: -5vh;
+    margin-top: -7.5vh;
     flex-wrap: wrap;
 }
 
 header h1 {
     margin-right: auto;
     padding:1vh;
-    font-variant: small-caps;
+    font-family: 'Satisfy', cursive;
 }
 
 nav ul {
@@ -60,7 +60,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh;
+    margin-top: 7.5vh;
 }
 
 .selfie {
@@ -71,7 +71,13 @@ nav ul li a {
     width: 20vw;
 }
 
-.desc {
+.desc h2 {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.desc p {
     padding: 1vh;
     background-color: #dfa132;
     width: 25vw;
@@ -80,9 +86,6 @@ nav ul li a {
     border: 5px double bisque;
     box-shadow: #131211 0px 0px 5px;
     font-size: 1vw;
-}
-
-.desc p {
     padding: 1vh;
 }
 
@@ -92,15 +95,17 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: -2.5vh;
 }
 
 .works h2 {
-    font-size: 5vh;
+    font-size: 5vw;
     margin: 2vh;
     padding: 2vh;
     border-bottom: 5px solid #dfa132;
     text-align: center;
     width: 70vw;
+    font-family: 'Satisfy', cursive;
 }
 
 .content {
@@ -117,6 +122,9 @@ nav ul li a {
     margin: 1vw;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .recents img {
@@ -134,6 +142,39 @@ nav ul li a {
     border-radius: 10px;
     border: 5px double bisque;
     flex: 1 0 100%;
+    width: 33vw;
+    height: 23vw;
+}
+
+.cover h3 {
+    background-color: rgba(11, 10, 9, 0.9);
+    color: bisque;
+    padding: 1vw;
+    border-radius: 10px;
+    font-size: 2vw;
+}
+
+.cover p {
+    width: 70%;
+    text-align: center;
+    background-color: rgba(11, 10, 9, 0.9);
+    border-radius: 10px;
+    color: bisque;
+    font-size: 1vw;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.cover:hover {
+    background-color: rgb(223, 161, 50);
+}
+
+.cover a {
+    color:#dfa132;
+}
+
+.cover a:hover {
+    color:#ffee00;
 }
 
 .big {
@@ -152,35 +193,21 @@ nav ul li a {
 
 .big .cover h3 {
     margin:2vw;
-    background-color: rgba(11, 10, 9, 0.9);
-    color: bisque;
-    padding: 2vw;
-    border-radius: 10px;
     font-size: 3vw;
+    padding: 2vw;
 }
 
 .big .cover p {
-    width: 70%;
-    text-align: center;
-    background-color: rgba(11, 10, 9, 0.9);
-    padding: 2vw;
-    border-radius: 10px;
-    color: bisque;
     font-size: 1.5vw;
+    padding: 2vw;
 }
 
 .big .cover ul {
     list-style: none;
 }
 
-.big .cover a {
-    color:#dfa132;
-}
-
-.big .cover a:hover {
-    color:#ffee00;
-}
-
-.big .cover:hover {
-    background-color: rgb(223, 161, 50);
+footer {
+    height: 10vh;
+    background-color: #131211;
+    margin-top: 5vh;
 }
