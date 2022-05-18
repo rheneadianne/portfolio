@@ -15,6 +15,11 @@ html {
 a {
     text-decoration: none;
     color: inherit;
+    color:#dfa132;
+}
+
+a:hover {
+    color:#ffee00;
 }
 
 body {
@@ -22,6 +27,10 @@ body {
     background-position:bottom left;
     background-attachment: fixed;
     font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
 }
 
 header {
@@ -49,11 +58,13 @@ nav ul {
     list-style: none;
     justify-content: space-around;
     margin-right: 10vw;
+    font-family: 'Satisfy', cursive;
 }
 
 nav ul li a {
     padding: 1vh;
     text-transform: lowercase;
+    font-size: 1.5vw;
 }
 
 .about {
@@ -72,7 +83,6 @@ nav ul li a {
 }
 
 .desc h2 {
-    font-family: 'Satisfy', cursive;
     text-align: center;
     font-size: 2vw;
 }
@@ -105,7 +115,6 @@ nav ul li a {
     border-bottom: 5px solid #dfa132;
     text-align: center;
     width: 70vw;
-    font-family: 'Satisfy', cursive;
 }
 
 .content {
@@ -169,14 +178,6 @@ nav ul li a {
     background-color: rgb(223, 161, 50);
 }
 
-.cover a {
-    color:#dfa132;
-}
-
-.cover a:hover {
-    color:#ffee00;
-}
-
 .big {
     width: 68vw;
     height: 38vw;
@@ -207,7 +208,122 @@ nav ul li a {
 }
 
 footer {
-    height: 10vh;
+    height: auto;
     background-color: #131211;
     margin-top: 5vh;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+footer h2 {
+    padding: 2vw;
+    font-size: 3vw;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    padding: 1vw;
+}
+
+footer a {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        flex-direction: column;
+        margin-top:-15vw;
+    }
+
+    header h1{
+        margin:0;
+    }
+
+    header ul {
+        padding: 1vw;
+    }
+
+    nav ul li a {
+        font-size: 3vw;
+    }
+
+    .about{
+        width: 100vw;
+        margin-top:15vw;
+    }
+
+    .selfie img{
+        width: 40vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .desc p{
+        font-size: 2vw;
+    }
+
+    .desc h2 {
+        font-size: 5vw;
+    }
+
+    .works h2 {
+        font-size: 10vw;
+    }
+
+    .cover p, .big .cover p{
+        font-size: 1.8vw;
+    }
+
+    .cover h3, .big .cover h3 {
+        font-size: 2vw;
+    }
+
+    footer h2 {
+        font-size: 6vw;
+    }
+    
+    footer a {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+header {
+    margin-top: -25vw;
+}
+
+    .about {
+        margin-top:25vw;
+        flex-direction: column;
+    }
+
+    .desc {
+        margin-top: -5vw;
+    }
+
+    .desc p {
+        width: 80vw;
+        font-size: 3vw;
+    }
+
+    nav ul li a {
+        font-size: 4vw;
+    }
+
+    .cover p, .big .cover p{
+        font-size: 2.2vw;
+    }
+
+    .cover h3, .big .cover h3 {
+        font-size: 2.5vw;
+    }
 }
