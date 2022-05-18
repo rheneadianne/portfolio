@@ -1,0 +1,173 @@
+:root {
+    --bg:#131211;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-image: url('../images/hip-square.webp');
+    background-position:bottom left;
+    background-attachment: fixed;
+    font-family: 'Mali', cursive;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 5vh;
+    width: 100vw;
+    background-color:var(--bg);
+    color: bisque;
+    position: sticky;
+    z-index: 500;
+}
+
+header h1 {
+    margin-right: auto;
+    padding:10px;
+    margin-left:20px;
+    font-variant: small-caps;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-right: 80px;
+}
+
+nav ul li a {
+    padding: 20px;
+    text-transform: lowercase;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selfie {
+    padding:20px;
+}
+
+.selfie img {
+    width: 300px;
+}
+
+.desc {
+    padding: 20px;
+    background-color: #dfa132;
+    width: 25%;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px double bisque;
+    box-shadow: #131211 0px 0px 5px;
+    font-size: 20px;
+}
+
+.desc p {
+    padding: 10px;
+}
+
+.works {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.works h2 {
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 5px solid #dfa132;
+    text-align: center;
+    width: 650px;
+}
+
+.content {
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recents {
+    width: 330px;
+    height: 230px;
+    background-color: #131211;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.big {
+    width: 680px;
+    height: 480px;
+}
+
+.cover {
+    width: 670px;
+    height: 470px;
+    background-color: rgb(255, 228, 196, .6);
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 5px double bisque;
+}
+
+.cover h3 {
+    margin:20px;
+    background-color: rgba(11, 10, 9, 0.8);
+    color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cover p {
+    width: 70%;
+    text-align: center;
+    background-color: rgba(11, 10, 9, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: bisque;
+    font-size: 15px;
+}
+
+.cover ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+.cover a {
+    color:#dfa132;
+}
+
+.cover a:hover {
+    color:#ffee00;
+}
+
+.cover:hover {
+    background-color: rgb(223, 161, 50);
+}
