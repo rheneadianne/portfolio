@@ -50,6 +50,8 @@ header h1 {
     margin-right: auto;
     padding:1vh;
     font-family: 'Satisfy', cursive;
+    box-sizing: border-box;
+    width: auto;
 }
 
 nav ul {
@@ -95,7 +97,7 @@ nav ul li a {
     border-radius: 10px;
     border: 5px double bisque;
     box-shadow: #131211 0px 0px 5px;
-    font-size: 1vw;
+    font-size: 1.5vw;
     padding: 1vh;
 }
 
@@ -169,7 +171,7 @@ nav ul li a {
     background-color: rgba(11, 10, 9, 0.9);
     border-radius: 10px;
     color: bisque;
-    font-size: 1vw;
+    font-size: 1.5vw;
     padding: 1vw;
     margin: 1vw;
 }
